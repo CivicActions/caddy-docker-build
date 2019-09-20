@@ -1,6 +1,6 @@
 # caddy-docker-build
 
-Simple Caddy Docker builder, using go modules for plugins.
+Simple Caddy Docker build, using go modules for plugins.
 
 The existing [caddy-builder](https://github.com/abiosoft/caddy-docker/blob/master/BUILDER.md) project is good for a quick start, but can be non deterministic as plugins and dependencies are not strictly versioned, leading to flakey builds.
 
