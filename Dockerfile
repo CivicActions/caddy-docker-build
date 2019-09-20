@@ -45,4 +45,4 @@ VOLUME /root/.caddy /srv
 WORKDIR /srv
 
 ENTRYPOINT ["/bin/parent", "caddy"]
-CMD ["--log", "stdout", "--agree=true"]
+CMD ["--conf", "/etc/Caddyfile", "--log", "stdout", "--agree=true"]
