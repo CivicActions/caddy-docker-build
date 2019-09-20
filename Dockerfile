@@ -27,7 +27,9 @@ FROM alpine:3.10
 # System dependencies
 RUN apk add --no-cache \
     ca-certificates \
-    tzdata
+    mailcap \
+    tzdata \
+    && update-ca-certificates
 
 # Install caddy
 COPY --from=builder /go/bin/caddy /usr/bin/caddy
